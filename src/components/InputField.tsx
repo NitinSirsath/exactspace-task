@@ -37,6 +37,9 @@ const InputField = ({ setUserData }: IProps) => {
   const randomNumber = Math.floor(Math.random() * 5);
 
   const handleClick = () => {
+    
+        const date = new Date();
+        const time = date.toLocaleTimeString().slice(0, 4)
     if(inputValue !== ''){
       setInputValue('')
       setUserData((prev: any) => [
@@ -45,11 +48,14 @@ const InputField = ({ setUserData }: IProps) => {
           name: user_list[randomNumber].name,
           message: inputValue,
           background: user_list[randomNumber].background,
+          time: time
         },
       ]);
     }
     
-  };
+    
+    
+  }; 
 
 return (
     <Container>

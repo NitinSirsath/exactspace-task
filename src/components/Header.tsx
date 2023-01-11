@@ -10,7 +10,7 @@ const Header = () => {
             <p>This Channel For Company Wide Chatter</p>
            </div>
            <UsersNumberWrapper>
-              <p> 3| 100</p>             
+              <p> 5| 100</p>             
              <img src={GroupIcon} alt="users"  height={20}/>
            </UsersNumberWrapper>
         </HeaderContainer>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, ProfileIcon ,ChatContainer,ChatMessage,ChatMessageContainer} from "./chatWindow.style";
+import { Container, ProfileIcon ,ChatContainer,ChatMessage,ChatMessageContainer,MessageTime} from "./chatWindow.style";
 
 interface IProps {
   userData: any;
@@ -18,7 +18,7 @@ const ChatWindow = ({ userData }: IProps) => {
                 <h3>{newstr}</h3>
               </ProfileIcon>
               <ChatMessageContainer>
-                <h2>{user.name}</h2>
+                <h2>{user.name} <MessageTime>{user.time}</MessageTime></h2>
                 <ChatMessage>{user.message}</ChatMessage>
               </ChatMessageContainer>
             </ChatContainer>

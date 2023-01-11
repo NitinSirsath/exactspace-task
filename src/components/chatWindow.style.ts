@@ -35,3 +35,8 @@ justify-content: center;
 align-items: center;
 `
 
+export const MessageTime = styled.span`
+    font-size: 12px;
+    font-weight: lighter;
+`
+
